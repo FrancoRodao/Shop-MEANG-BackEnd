@@ -1,8 +1,8 @@
 import { IResolvers } from "graphql-tools";
-import User from "../schemas/models/user.model";
+import User from "../../schemas/models/user.model";
 import bcrypt from "bcrypt";
 
-const resolversMutation: IResolvers = {
+const registerResolverMutation: IResolvers = {
      Mutation: {
         async register(_, {user}, context){
             try {
@@ -34,4 +34,4 @@ const resolversMutation: IResolvers = {
      }
 }
 
-export default resolversMutation
+export default registerResolverMutation

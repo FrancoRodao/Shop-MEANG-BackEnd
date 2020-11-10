@@ -1,9 +1,9 @@
-import { IResolvers } from "graphql-tools";
-import { MESSAGES } from "../config/constants";
-import Jwt from "../lib/jwt";
-import User from "../schemas/models/user.model";
+import { IResolvers } from "graphql-tools"
+import { MESSAGES } from "../../config/constants"
+import Jwt from "../../lib/jwt"
+import User from "../../schemas/models/user.model"
 
-const queryResolver: IResolvers = {
+const usersQueryResolver: IResolvers = {
     Query: {
         async users(root, args, context, info) {
             try {
@@ -77,8 +77,8 @@ const queryResolver: IResolvers = {
                 user: Object.values(payload)[0]
             }
         }
-
     }
 }
 
-export default queryResolver
+
+export default usersQueryResolver

@@ -1,0 +1,10 @@
+"Input para añadir los datos del usuario en el registro"
+input UserInput{
+    _id: ID
+    name: String!
+    lastname: String!
+    email: String!
+    password: String!
+    birthday: String!
+    role: Role=CLIENT
+}

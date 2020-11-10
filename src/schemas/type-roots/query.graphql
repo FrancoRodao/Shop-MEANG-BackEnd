@@ -1,0 +1,14 @@
+"Definiciones de los tipos de raiz"
+type Query {
+    "LISTA DE USUARIOS REGISTRADA EN LA BASE DE DATOS (CLIENTES/ADMIN)"
+    users: ResultUsers
+
+    "INICIAR SESION"
+    login(email: String!, password: String!): ResultLogin
+
+    "AUTHENICAR CON TOKEN"
+    me: ResultUser
+
+    "mostrar lista de productios"
+    products: Boolean
+}
